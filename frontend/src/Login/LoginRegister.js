@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/LoginRegister.css";
 
-const BASE_URL = "https://baitapweb-111.onrender.com/";
+const BASE_URL = "http://localhost:2212/api";
 
 function LoginRegister({ onClose, isRegister, onLoginSuccess }) {
   const [formData, setFormData] = useState({
