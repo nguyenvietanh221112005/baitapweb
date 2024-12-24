@@ -7,7 +7,7 @@ const fieldRoutes = require("./routes/fieldRoutes");
 const bookingRoutes = require("./routes/bookingRoutes");
 
 const app = express();
-
+const port = process.env.PORT || 2212;
 // Cấu hình CORS cho phép frontend truy cập
 app.use(cors({
     origin: '*', // Cho phép tất cả các domain
