@@ -223,42 +223,7 @@ function Booking() {
     return timeSlots[time];
   };
 
-  const handleCancelBooking = async (bookingId) => {
-    if (!window.confirm('Bạn có chắc chắn muốn hủy đặt sân này?')) {
-      return;
-    }
-
-    try {
-      console.log('Canceling booking:', bookingId);
-      const response = await fetch(`${BASE_URL}/bookings/${bookingId}/cancel`, {
-        method: 'PUT',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        }
-      });
-
-      const data = await response.json();
-      console.log('Cancel response:', data);
-      
-      if (!response.ok) {
-        throw new Error(data.message || 'Không thể hủy đặt sân');
-      }
-
-      // Cập nhật danh sách slots đã đặt
-      if (data.updatedSlots) {
-        setBookedSlots(data.updatedSlots);
-      }
-
-      // Refresh lại danh sách đã đặt
-      await fetchBookedSlots();
-      
-      alert('Hủy đặt sân thành công');
-    } catch (error) {
-      console.error('Error canceling booking:', error);
-      alert(error.message || 'Không thể hủy đặt sân');
-    }
-  };
+  
 
   return (
     <div className="booking-page">
