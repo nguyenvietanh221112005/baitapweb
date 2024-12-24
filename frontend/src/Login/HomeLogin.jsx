@@ -12,9 +12,9 @@ function HomeLogin() {
 
   // Dữ liệu banner
   const banners = [
-    'https://cebcu.com/wp-content/uploads/2024/09/anh-gai-xinh-choi-pickleball-1.webp',
-    'https://kenh14cdn.com/203336854389633024/2024/8/24/6214988364063555428-1724411632790541174182-1724416058529-1724416059139743604134-1724467772591-17244677729041755822096.jpg',
-    'https://kenh14cdn.com/thumb_w/660/203336854389633024/2024/8/16/k14-33-17238061784712061040329.jpg'
+    'https://shopvnb.com/uploads/images/tin_tuc/kich-thuoc-san-pickleball-3-1717631144.webp',
+    'https://sonsanepoxy.vn/wp-content/uploads/2024/07/Thi-c%C3%B4ng-s%C3%A2n-Pickleball-11.png',
+    'https://sukavietnam.com/wp-content/uploads/2024/09/sukavietnam.com-hinh-anh-mau-san-pickleball-dep-1.webp'
   ];
 
   useEffect(() => {
@@ -115,7 +115,7 @@ function HomeLogin() {
       <div className="court-info">
         <h2>Thông Tin Sân Pickleball</h2>
         <p><strong>Tên Sân:</strong> Pickleball Arena</p>
-        <p><strong>Địa Chỉ:</strong> đéo biết</p>
+        <p><strong>Địa Chỉ:</strong> số 20 Hoàng Quốc Việt </p>
         <p><strong>Số Điện Thoại:</strong> +84 376125660</p>
         <p><strong>Giờ Mở Cửa:</strong> 8:00 AM - 12:00 PM</p>
       </div>
